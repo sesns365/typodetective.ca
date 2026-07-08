@@ -632,29 +632,15 @@
             return arr;
         }
         const QUESTIONS_DB = {
-            word: [
-                { id: 'w1', q: "[]手", options: shuffleArray(["拥", "拍", "垅"]), a: "拍", full: "拍手" },
-                { id: 'w2', q: "拍[]", options: shuffleArray(["犬", "手", "开"]), a: "手", full: "拍手" },
-                { id: 'w3', q: "一[]一右", options: shuffleArray(["在", "左", "佐"]), a: "左", full: "一左一右" },
-                { id: 'w4', q: "一左一[]", options: shuffleArray(["石", "右", "佑"]), a: "右", full: "一左一右" },
-                { id: 'w5', q: "[]們", options: shuffleArray(["妳", "你", "您"]), a: "你", full: "你們" },
-                { id: 'w6', q: "[]人", options: shuffleArray(["地", "他", "池"]), a: "他", full: "他人" },
-                { id: 'w7', q: "[]許", options: shuffleArray(["他", "也", "地"]), a: "也", full: "也許" },
-                { id: 'w8', q: "一擁而[]", options: shuffleArray(["止", "上", "土"]), a: "上", full: "一擁而上" },
-                { id: 'w9', q: "[]午", options: shuffleArray(["卞", "下", "不"]), a: "下", full: "下午" }
-            ],
-            sentence: [
-                { id: 's1', q: "生活中遇到拥手時，我會多注意。", wrong: "拥", a: "拍", full: "生活中遇到拍手時，我會多注意。" },
-                { id: 's2', q: "今天上課時，老師分享了拍犬的故事。", wrong: "犬", a: "手", full: "今天上課時，老師分享了拍手的故事。" },
-                { id: 's3', q: "我和家人聊到一在一右，覺得很有趣。", wrong: "在", a: "左", full: "我和家人聊到一左一右，覺得很有趣。" },
-                { id: 's4', q: "這張照片裡的一左一石吸引了大家的目光。", wrong: "石", a: "右", full: "這張照片裡的一左一右吸引了大家的目光。" },
-                { id: 's5', q: "生活中遇到妳們時，我會多注意。", wrong: "妳", a: "你", full: "生活中遇到你們時，我會多注意。" },
-                { id: 's6', q: "我們要尊重地人的想法。", wrong: "地", a: "他", full: "我們要尊重他人的想法。" },
-                { id: 's7', q: "我和家人聊到他許，覺得很有趣。", wrong: "他", a: "也", full: "我和家人聊到也許，覺得很有趣。" },
-                { id: 's8', q: "這張照片裡的一擁而止吸引了大家的目光。", wrong: "止", a: "上", full: "這張照片裡的一擁而上吸引了大家的目光。" },
-                { id: 's9', q: "生活中遇到卞午時，我會多注意。", wrong: "卞", a: "下", full: "生活中遇到下午時，我會多注意。" }
-            ]
-        };
+  word: [
+    { id: "w1", q: "[]手", options: ["拍","柏","伯"], a: "拍", full: "拍手" },
+    { id: "w2", q: "拍[]", options: ["手","首","守"], a: "手", full: "拍手" }
+  ],
+  sentence: [
+    { id: "s1", q: "看到精采的表演，全場觀眾都興奮地「柏」手叫好。", wrong: "柏", a: "拍", full: "看到精采的表演，全場觀眾都興奮地拍手叫好。" },
+    { id: "s2", q: "飯前記得要洗「首」，才能保持身體健康。", wrong: "首", a: "手", full: "飯前記得要洗手，才能保持身體健康。" }
+  ]
+};
 
         const gameState = {
             studentName: '',

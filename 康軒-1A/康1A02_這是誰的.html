@@ -632,33 +632,13 @@
             return arr;
         }
         const QUESTIONS_DB = {
-            word: [
-                { id: 'w1', q: "[]些", options: shuffleArray(["倍", "這", "桎"]), a: "這", full: "這些" },
-                { id: 'w2', q: "硬[]", options: shuffleArray(["泶", "是", "俩"]), a: "是", full: "硬是" },
-                { id: 'w3', q: "[]字", options: shuffleArray(["褲", "誰", "嘻"]), a: "誰", full: "誰字" },
-                { id: 'w4', q: "濃濃[]", options: shuffleArray(["白", "的", "約"]), a: "的", full: "濃濃的" },
-                { id: 'w5', q: "[]們", options: shuffleArray(["找", "我", "餓"]), a: "我", full: "我們" },
-                { id: 'w6', q: "[]鐘", options: shuffleArray(["仅", "分", "反"]), a: "分", full: "分鐘" },
-                { id: 'w7', q: "[]痛", options: shuffleArray(["妹", "好", "妳"]), a: "好", full: "好痛" },
-                { id: 'w8', q: "為[]", options: shuffleArray(["冂", "了", "勹"]), a: "了", full: "為了" },
-                { id: 'w9', q: "[]呀", options: shuffleArray(["砸", "啊", "舐"]), a: "啊", full: "啊呀" },
-                { id: 'w10', q: "[]管閒事", options: shuffleArray(["夕", "多", "夠"]), a: "多", full: "多管閒事" },
-                { id: 'w11', q: "一[]", options: shuffleArray(["鸭", "個", "捅"]), a: "個", full: "一個" }
-            ],
-            sentence: [
-                { id: 's1', q: "生活中遇到倍些時，我會多注意。", wrong: "倍", a: "這", full: "生活中遇到這些時，我會多注意。" },
-                { id: 's2', q: "今天上課時，老師分享了硬泶的故事。", wrong: "泶", a: "是", full: "今天上課時，老師分享了硬是的故事。" },
-                { id: 's3', q: "我和家人聊到褲字，覺得很有趣。", wrong: "褲", a: "誰", full: "我和家人聊到誰字，覺得很有趣。" },
-                { id: 's4', q: "這張照片裡白濃濃的吸引了大家的目光。", wrong: "白", a: "的", full: "這張照片裡的濃濃的吸引了大家的目光。" },
-                { id: 's5', q: "生活中遇到找們時，我會多注意。", wrong: "找", a: "我", full: "生活中遇到我們時，我會多注意。" },
-                { id: 's6', q: "今天上課時，老師仅享了分鐘的故事。", wrong: "仅", a: "分", full: "今天上課時，老師分享了分鐘的故事。" },
-                { id: 's7', q: "我和家人聊到妹痛，覺得很有趣。", wrong: "妹", a: "好", full: "我和家人聊到好痛，覺得很有趣。" },
-                { id: 's8', q: "這張照片裡的為冂吸引了大家的目光。", wrong: "冂", a: "了", full: "這張照片裡的為了吸引了大家的目光。" },
-                { id: 's9', q: "生活中遇到砸呀時，我會多注意。", wrong: "砸", a: "啊", full: "生活中遇到啊呀時，我會多注意。" },
-                { id: 's10', q: "今天上課時，老師分享了夕管閒事的故事。", wrong: "夕", a: "多", full: "今天上課時，老師分享了多管閒事的故事。" },
-                { id: 's11', q: "我和家人聊到一鸭，覺得很有趣。", wrong: "鸭", a: "個", full: "我和家人聊到一個，覺得很有趣。" }
-            ]
-        };
+  word: [
+    { id: "w1", q: "一[]", options: ["個","各","介"], a: "個", full: "一個" }
+  ],
+  sentence: [
+    { id: "s1", q: "桌子上有一各紅蘋果。", wrong: "各", a: "個", full: "桌子上有一個紅蘋果。" }
+  ]
+};
 
         const gameState = {
             studentName: '',
